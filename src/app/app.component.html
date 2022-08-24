@@ -1,1 +1,19 @@
-<router-outlet></router-outlet>
+<div class="main-container">
+    <div class="app-title">
+        <h1>Bob-The-Chatbot</h1>
+    </div>
+    <div class="container">
+        <div class="chatbot">
+            <img src="../assets/bot.png" alt="bob-the-chatbot" />
+        </div>
+        <div class="text-container">
+            <p>{{textToDisplay}}</p>
+        </div>
+        <div class="input-container">
+            <input type="text" class="input-prompt" placeholder="Hello, Bob!" [(ngModel)]="userPrompt"><br />
+            <button class="input-submit" (click)="changeResponse()">
+                <span>Talk to Bob</span>
+            </button>
+        </div>
+    </div>
+</div>
